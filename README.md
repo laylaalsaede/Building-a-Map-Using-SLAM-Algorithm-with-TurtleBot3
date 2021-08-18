@@ -25,5 +25,29 @@ This project is my last project in AI as an intern in Smart Methods, in this pro
 Sometimes ROS is not configuring the the added files, so it is recommended to write this command:
 
         $ source ~/.bashrc
+## Install Simulation Package
+
+        $ cd ~/catkin_ws/src/
+        $ git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+        $ cd ~/catkin_ws && catkin_make
+        
+## Launch Simulation World
+
+        $ export TURTLEBOT3_MODEL=waffle
+        $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
+        
+ # SLAM Simulation
+ ## Launch Simulation World
+        $ export TURTLEBOT3_MODEL=burger
+        $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
+## Run SLAM Node
+        $ export TURTLEBOT3_MODEL=burger
+        $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+## Run Teleoperation Node
+        $ export TURTLEBOT3_MODEL=burger
+        $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+## Save Map
+        hen the map is created successfully, open a new terminal from Remote PC with Ctrl + Alt + T and save the map.
+        
         
         
