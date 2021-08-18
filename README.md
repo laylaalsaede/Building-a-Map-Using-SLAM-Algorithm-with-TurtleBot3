@@ -16,11 +16,13 @@ This project is my last project in AI as an intern in Smart Methods, in this pro
         
 ## Install TurtleBot3 Packages:
 
+
         $ sudo apt-get install ros-kinetic-dynamixel-sdk
         $ sudo apt-get install ros-kinetic-turtlebot3-msgs
         $ sudo apt-get install ros-kinetic-turtlebot3
         
 ## Set TurtleBot3 Model Name
+
         $ echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
 Sometimes ROS is not configuring the the added files, so it is recommended to write this command:
 
@@ -36,6 +38,8 @@ Sometimes ROS is not configuring the the added files, so it is recommended to wr
         $ export TURTLEBOT3_MODEL=waffle
         $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
         
+ ![2021-08-17 (5)](https://user-images.githubusercontent.com/63214056/129894752-6d49a77e-4f63-4df5-b9f5-3d0028e2922a.png)
+
  # SLAM Simulation
  ## Launch Simulation World
         $ export TURTLEBOT3_MODEL=burger
@@ -43,11 +47,30 @@ Sometimes ROS is not configuring the the added files, so it is recommended to wr
 ## Run SLAM Node
         $ export TURTLEBOT3_MODEL=burger
         $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+        
 ## Run Teleoperation Node
         $ export TURTLEBOT3_MODEL=burger
         $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+        Control Your TurtleBot3!
+        ---------------------------
+        Moving around:
+             w
+        a    s    d
+             x
+
+      w/x : increase/decrease linear velocity
+      a/d : increase/decrease angular velocity
+      space key, s : force stop
+
+      CTRL-C to quit
+      
+      
+      ![2021-08-17 (8)](https://user-images.githubusercontent.com/63214056/129895364-98675764-7958-4572-bc7d-f03ff9549524.png)
+
+      
 ## Save Map
         hen the map is created successfully, open a new terminal from Remote PC with Ctrl + Alt + T and save the map.
         
-        
+        ![2021-08-18 (5)](https://user-images.githubusercontent.com/63214056/129895417-c6d7cecd-9ffd-492f-8cd3-f310cac820c7.png)
+
         
