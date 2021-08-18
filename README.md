@@ -67,7 +67,7 @@ Sometimes ROS is not configuring the the added files, so it is recommended to wr
 
       
 ## Save Map
-        hen the map is created successfully, open a new terminal from Remote PC with Ctrl + Alt + T and save the map.
+When the map is created successfully, open a new terminal from Remote PC with Ctrl + Alt + T and save the map.
         
 ![2021-08-18 (5)](https://user-images.githubusercontent.com/63214056/129895959-b285e8ab-44c9-4416-a804-74422ec1f947.png)
 
