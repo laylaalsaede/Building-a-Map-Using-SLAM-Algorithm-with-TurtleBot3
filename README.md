@@ -71,4 +71,7 @@ When the map is created successfully, open a new terminal from Remote PC with Ct
         
 ![2021-08-18 (5)](https://user-images.githubusercontent.com/63214056/129895959-b285e8ab-44c9-4416-a804-74422ec1f947.png)
 
+## issues
+The map did not appear completely, although I waited for a long time and also could not save the map, I think because I worked on an online workspace
+
         
