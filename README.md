@@ -33,17 +33,15 @@ Sometimes ROS is not configuring the the added files, so it is recommended to wr
         $ git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
         $ cd ~/catkin_ws && catkin_make
         
-## Launch Simulation World
+        
 
+ # SLAM Simulation
+ ## Launch Simulation World
         $ export TURTLEBOT3_MODEL=waffle
         $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
         
  ![2021-08-17 (5)](https://user-images.githubusercontent.com/63214056/129894752-6d49a77e-4f63-4df5-b9f5-3d0028e2922a.png)
 
- # SLAM Simulation
- ## Launch Simulation World
-        $ export TURTLEBOT3_MODEL=burger
-        $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ## Run SLAM Node
         $ export TURTLEBOT3_MODEL=burger
         $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
@@ -65,12 +63,12 @@ Sometimes ROS is not configuring the the added files, so it is recommended to wr
       CTRL-C to quit
       
       
-      ![2021-08-17 (8)](https://user-images.githubusercontent.com/63214056/129895364-98675764-7958-4572-bc7d-f03ff9549524.png)
+![2021-08-17 (8)](https://user-images.githubusercontent.com/63214056/129895364-98675764-7958-4572-bc7d-f03ff9549524.png)
 
       
 ## Save Map
         hen the map is created successfully, open a new terminal from Remote PC with Ctrl + Alt + T and save the map.
         
-        ![2021-08-18 (5)](https://user-images.githubusercontent.com/63214056/129895417-c6d7cecd-9ffd-492f-8cd3-f310cac820c7.png)
+![2021-08-18 (5)](https://user-images.githubusercontent.com/63214056/129895417-c6d7cecd-9ffd-492f-8cd3-f310cac820c7.png)
 
         
